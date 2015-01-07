@@ -107,56 +107,6 @@
 			
 			 	newArr = oldArr.concat(newArr);
 			 	$this.show(ele,newArr,callback);
-		},
-		scroll:function(ele,allurl,addurl){
-			var $this = this,
-			 	 _ele = ele || $this.ele,
-			 	 _allurl = allurl || "",
-			 	 _addurl = addurl || "";
-			 	 $(_ele).parents(".panel").height("auto");
-			 	 
-			 	 var myScroller = $(_ele).find("li");
-					//This event is triggered when the user has scrolled past and the pull to refresh block is no longer available
-					$.bind(myScroller, "click", function () {
-						
-					});
-			 	 
-			 	  var myScroller=$(_ele).parents("#content").scroller({
-					    refresh:true,
-					    scrollBars: true
-					});
-					
-					
-			 	 //下拉重置
-//			 	 $(_ele).bind("swipe",function(){
-//			 	 	console.log("swipe");
-//			 	 	var $this=$(this),offset = $(this).parent().css("transform"),
-//			 	 		headHeight = parseInt($("#header").height()),
-//			 	 		footHeight = parseInt($("#foot").height());
-//			 	 		offset = offset.substring(offset.indexOf("(") + 1,offset.indexOf(")"));
-//			 	 		offset = offset.split(", ");
-//			 	 	var offsetTop = parseInt(offset[13]);
-//
-//			 	 	if(offsetTop == 0){
-//			 	 		console.log("start");
-//			 	 		var newArr = offset;
-//			 	 		for(var i = 0;i <= 44;i++){
-//			 	 			newArr[13] = i;
-//			 	 			console.log("matrix3d("+newArr.join(", ")+");");
-//			 	 			$this.css("transform","matrix3d("+newArr.join(", ")+");");
-//			 	 		}
-//			 	 	}
-//			 	 })
-//			 	 //瀑布流刷新
-//			 	 $(_ele).bind("swipeUp",function(){
-//			 	 	var offsetTop = $(this).parent().css("transform"),
-//			 	 		headHeight = $("#header").height(),
-//			 	 		footHeight = $("#foot").height();
-//			 	 		offsetTop = offsetTop.substring(offsetTop.indexOf("(") + 1,offsetTop.indexOf(")"));
-//			 	 		offsetTop = offsetTop.split(",");
-//			 	 		offsetTop = offsetTop[13];
-//			 	 	console.log(offsetTop);
-//			 	 })
 		}
 	});
 
