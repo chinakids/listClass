@@ -2,6 +2,7 @@
  * name : js栈模型
  * by   : chinakids
  */
+
 function Stack(){
 	this.dataStore = [];
 	this.top = 0;
