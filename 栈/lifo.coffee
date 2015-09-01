@@ -1,7 +1,5 @@
-
-# name : js栈模型
+# name : js栈模型  - coffee 实践
 # by   : chinakids
-
 
 class Stack
   constructor: ->
