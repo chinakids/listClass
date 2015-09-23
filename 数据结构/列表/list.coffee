@@ -8,11 +8,8 @@ class List
     @pos = 0
     @dataStore = []
 
-
-
   append : (element) ->
     @dataStore[@listSize++] = element
-
 
   find : (element) ->
     for i in @dataStore
