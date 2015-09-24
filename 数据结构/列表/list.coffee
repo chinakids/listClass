@@ -27,10 +27,8 @@ class List
   length : () ->
     @listSize
 
-
   toString : () ->
     @dataStore
-
 
   insert : (element , after) ->
     insertPos = @find after
@@ -50,19 +48,15 @@ class List
       return true if @dataStore[i] is element
     return false
 
-
   front : () ->
     @pos =0
-
 
   end : () ->
     @pos = @listSize -1
 
-
   prev : () ->
     if @pos > 0
       --@pos
-
 
   next : () ->
     if @pos < @listSize -1
@@ -73,7 +67,6 @@ class List
 
   moveTo : (position) ->
     @pos = position
-
 
   getElement : () ->
     @dataStore[@pos]
