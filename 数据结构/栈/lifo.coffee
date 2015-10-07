@@ -22,7 +22,6 @@ class Stack
     @top=0
     @
 
-
 # name : 进制转换 （by 栈）
 
 mulBase = (num,base) ->
@@ -32,9 +31,7 @@ mulBase = (num,base) ->
     num = Math.floor(num /= base)  # ==  num=num/base
   while s.length() > 0
     converted += s.pop()
-
   onverted
-
 
 # name : 判断回文 （by 栈）
 
