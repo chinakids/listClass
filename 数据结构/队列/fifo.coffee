@@ -11,7 +11,6 @@ class Queue
   dequeue : (element) ->
     @dataStore.shift()
 
- #
  # @ 构造优先队列(code为优先级)
  #   dequeue : () ->
  #     priority = @dataStore.length[0].code
@@ -21,8 +20,7 @@ class Queue
  #
  #
  #     @dataStore.splice priority,1
- #
- #
+
   front : () ->
     @dataStore[0]
 
